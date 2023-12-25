@@ -62,6 +62,7 @@ const questions = [
     }
 
     function showQuestion(){
+        resetState();
         let currrentQuestion = questions[currrentQuestionIndex];
         let questionNo = currrentQuestionIndex + 1;
         questionElement.innerHTML = questionNo + ". " + currrentQuestion
